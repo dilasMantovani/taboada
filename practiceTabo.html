@@ -1,0 +1,54 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title>Practicing the tabo like a boss</title>
+
+	<script type="text/javascript" src="scripts.js"></script>
+	
+	<!-- bootstrap css-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body onload = "generateValues()">
+	<div align="center" class="container">
+		<div class="jumbotron">
+		 	<h1 class="display-4">Pratique a tabuada:</h1>
+		 	<p class="lead">O objetivo é acertar o mais rápido possível, desta forma, conforme você progride, ao bater o olho já saberá o resultado.</p>
+  			<hr class="my-4">
+			
+			<div id="input-group"  >
+				<label>Valor fixo</label>
+				<div class="input-group" >
+				  <div class="input-group-prepend">
+				    <div class="input-group-text">
+				    <input type="radio" id="radioFixo" aria-label="Radio button for following text input">
+				    </div>
+				  </div>
+				  <input type="number" class="form-control" id="textFixo" aria-label="Text input with radio button" onkeypress="generateValues()">
+				</div>
+			</div>
+			
+  			<div>
+				<label class="operation" id="v1" ></label>
+				<label class="operation" id="operador"> X </label>
+				<label class="operation" id="v2"></label>
+
+				<br/>
+
+				<button id="result1" onclick="checkCorrect(1)" class="btn btn-outline-primary btn-lg"></button>
+				<button id="result2" onclick="checkCorrect(2)" class="btn btn-outline-primary btn-lg"></button>
+				<button id="result3" onclick="checkCorrect(3)" class="btn btn-outline-primary btn-lg"></button>
+				<button id="result4" onclick="checkCorrect(4)" class="btn btn-outline-primary btn-lg"></button>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<p class="lead">Developed by Diego_Mantovani.</p>
+	</footer>
+</body>
+</html>

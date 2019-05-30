@@ -1,0 +1,18 @@
+.operation{
+	font-size: 50px;
+}
+
+footer {
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    text-align: center;
+}
+
+#input-group{
+	position: absolute;
+	float:  right;
+	width: 100px;
+	float: right;
+}
