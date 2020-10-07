@@ -1,2 +1,2 @@
-# taboada
+# tabuada
 software para praticar a tabuada
